@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="" size="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+
+        Ingrese su nombre:
+        <input type="text" name="nombre" size="20">
+        <br>
+        <input type="submit" value="enviar">
+    </form>
+    <!-- datos ultra basicos-->
+    <form action="registrardatos.php" method="post">
+        Ingrese su nombre: 
+        <input type="text" name="nombre" size="20">
+        <br>
+        Ingrese su clave: 
+        <input type="password" name="clave" size="12">
+        <br>
+        <input type="submit" value="enviar">
+        <input type="reset" value="borrar">
+    </form>
+    <!-- anotha way to fulfill data-->
+    <form action="registrardatos.php" method="post">
+        Ingrese su nombre:
+        <input type="text" name="nombre" size="30"><br>
+        Ingrese su mail:
+        <input type="text" name="mail" size="50"><br>
+        Comentarios:<br>
+        <textarea name="comentarios" rows="5" cols="60"></textarea> 
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+    <!--datos varios y comentarios-->
+    <form action="registrardatos.php" method="post">
+        Ingrese su nombre:
+        <input type="text" name="nombre" size="30"><br>
+        Seleccione los lenguajes que conoce:
+        <br>
+        <input type="checkbox" name="java">Java<br>
+        <input type="checkbox" name="cmasmas">C++<br>
+        <input type="checkbox" name="c">C<br>
+        <input type="checkbox" name="csharp">C#<br>
+        <input type="submit" value="Enviar">
+    </form>
+    <!-- seleccion multiple -->
+    <form action="registrardatos.php" method="post">
+        Ingrese su nombre:
+        <input type="text" name="nombre" size="30"><br>
+        
+    </form>
+    <!--niveles-->
+    
+    <!-- seleccion desde cajitas-->
+    <form action="registrardatos.php" method="post">
+        Seleccione uno o varios colores (Presione Ctrl para seleccionar varios colores)<br>
+        <select name="colores[]" size="4" multiple>
+          <option value="1">Rojo</option>
+          <option value="2">Verde</option>
+          <option value="3">Azul</option>
+          <option value="4">Amarillo</option>
+          <option value="5">Blanco</option>
+          <option value="6">Negro</option>
+          <option value="7">Naranja</option>
+          <option value="8">Violeta</option>
+        </select>
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+    <!-- seleccion por click-->
+    <form action="registrardatos.php" method="post">
+        Ingrese su nombre:
+        <input type="text" name="nombre" size="20">
+        <br>
+        <button type="submit">Enviar<img src="enviar.gif" alt="envio"></button>
+        <button type="reset">Borrar<img src="borrar.gif" alt="borrado"></button>
+    </form> 
+    <!-- rellenar normal pero con iconitos en los botones-->
+    <form action="registrardatos.php" method="post" enctype="multipart/form-data">
+        Ingrese su nombre:
+        <input type="text" name="nombre" size="30"><br>
+        
+    </form>
+    <!--data con foto-->
+    <form action="registrardatos.php" method="post">
+        <fieldset>
+          
+        </fieldset>
+    </form>
+    <!-- cuadradito de info-->
+    <form action="registrardatos.php" method="post">
+        Apellido y nombre:
+        <input type="text" name="nombre" size="30"><br>
+        Es mayor de edad?:<br>
+        <input type="radio" name="radio1" checked value="si">Si<br>
+        <input type="radio" name="radio1" value="no">No<br>
+        Telefono:
+        <input type="text" value="+34" name="telefono" size="15"><br>
+        <textarea name="comentarios" rows="5" cols="40">Ingrese aqui     sus comentarios</textarea><br>
+        <input type="submit" value="Enviar">
+    </form>
+    <!-- info basica +numero-->
+    <form action="registrardatos.php" method="post">
+        Seleccione la sección donde desea ingresar:
+        <br>
+        <input type="radio" name="seccion" value="1" disabled>Niños<br>
+        <input type="radio" name="seccion" value="2">Adolescentes<br>
+        <input type="radio" name="seccion" value="3">Mayores<br>
+        <input type="submit" value="Enviar">
+    </form>
+    <!-- seleccion con inhabilitacion de uno-->
+    <form action="registrardatos.php" method="post">
+        Ingrese su nombre: 
+        <input type="text" name="nombre" maxlength="20" size="20">
+        <br>
+        Ingrese su clave: 
+        <input type="password" name="clave" maxlength="12" size="12">
+        <br>
+        <input type="submit" value="enviar">
+    </form>
+    <!-- nombre y contraseña con limite de caracteres-->
+    <form action="mailto:reclamos@gmail.com" method="post" enctype="text/plain">
+        Ingrese su nombre: 
+        <input type="text" name="nombre" size="20">
+        <br>
+        Ingrese su dirección: 
+        <input type="text" name="dirección" size="30">
+        <br>
+        Informe del problema:
+        <br>
+        <textarea rows="5" cols="40" name="problema"></textarea>
+        <br>
+        <input type="submit" value="enviar">
+    </form>
+    <!-- quejas a direccion real-->
+</body>
+</html>

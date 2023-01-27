@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="" size="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <form action="index.html" method="post">
+        <fieldset>
+            <legend>Datos personales</legend>
+            <br>
+            Apellidos y nombre:
+            <input type="text" name="nombre" size="30" required name="nombre completo">
+            <br>
+            <br>
+            Documento de identidad:
+            <input type="text" name="dni" size="8" required name="DNI">
+            <br>
+            <br>
+            Fecha de nacimiento:
+            <input type="text" name="fechanacimiento" size="12" required name="nacimiento">
+            <br>
+            <br>
+            Dirección:
+            <input type="text" name="direccionpersona" size="30" required name="dirección">
+            <br>
+            <br>
+            Seleccione una fotografía suya:
+            <input type="file" name="foto" required name="fotografía">
+            <br>
+        </fieldset>
+        <br>
+        Seleccione su pais:
+        <select name="pais">
+            <option value="Argentina">Argentina</option>
+            <option value="España">España</option>
+            <option value="México">México</option>
+            <option value="Guatemala">Guatemala</option>
+            <option value="Honduras">Honduras</option>
+            <option value="El Salvador">El Salvador</option>
+            <option value="Venezuela">Venezuela</option>
+            <option value="Colombia">Colombia</option>
+            <option value="Cuba">Cuba</option>
+            <option value="Bolivia">Bolivia</option>
+            <option value="Perú">Perú</option>
+            <option value="Ecuador">Ecuador</option>
+            <option value="Nicaragua">Nicaragua</option>
+            <option value="Uruguay">Uruguay</option>
+            <option value="Chile">Chile</option>
+        </select>
+        <br>
+        <br>
+        Seleccione los idiomas que controla:
+        <select name="idiomas" multiple required name="idiomas">
+            <option value="español">Español
+            <option value="Inglés">Inglés
+            <option value="Alemán">Alemán
+            <option value="Italiano">Italiano
+            <option value="Chino">Chino
+            <option value="Francés">Francés
+            <option value="Portugués">Portugués
+            <option value="Japonés">Japonés
+            <input value="Ruso">Ruso
+            <input value="Sueco">Sueco
+            <input value="Griego">Griego
+            <input value="Euskera">Euskera
+            <input value="Gallego">Gallego
+            <input value="Catalán">Catalán
+            <input value="Pekinés">Pekinés
+        </select>
+        <br>
+        <br>
+        Seleccione el máximo nivel de estudios que tiene:
+        <select name="estudios" required name="estudios">
+        <option value="Sin estudios">Sin estudios</option>
+        <option value="primario">Primario</option>
+        <option value="secundario">Secundario</option>
+        <option value="universitario">Universitario</option>
+        <option value="postgrado">Postgrado</option>
+    </select>
+        <br>
+
+        <input type="submit" value="Enviar">
+
+    </form>
+</body>
+
+</html>
