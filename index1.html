@@ -4,18 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="shortcut icon" href="" size="">
+    <link rel="shortcut icon" href="./img/papelito.png" size="64x64">
+    <link rel="stylesheet" href="./estilos.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
 </head>
 
 <body>
-    <form action="index.html" method="post">
+    <p>Por favor, rellene toda la información con datos verdaderos. Una vez entregado comunicaremos con usted en un
+        plazo de cinco a siete días laborales.</p>
+    <br>
+    <br>
+    <form action="mailto:alumno.630326@ies-azarquiel.es" method="post" enctype="text/plain">>
         <fieldset>
             <legend>Datos personales</legend>
             <br>
             Apellidos y nombre:
             <input type="text" name="nombre" size="30" required name="nombre completo">
+            <br>
+            <br>
+            Género con el que se sienta identificad@:
+            <select name="genero">
+                <input value="hombre">Hombre
+                <input value="mujer">Mujer
+                <input value="no binario">No binario
+                <input value="otros">Otros (por favor, especifique):
+                <input type="text" name="otros" size="8">
+            </select>
             <br>
             <br>
             Documento de identidad:
@@ -36,14 +51,14 @@
         </fieldset>
         <br>
         Seleccione su pais:
-        <select name="pais">
+        <select name="pais" required name="pais">
             <option value="Argentina">Argentina</option>
             <option value="España">España</option>
             <option value="México">México</option>
             <option value="Guatemala">Guatemala</option>
             <option value="Honduras">Honduras</option>
             <option value="El Salvador">El Salvador</option>
-            <option value="Venezuela">Venezuela</option>
+            <option value="Venezuela" disabled>Venezuela</option>
             <option value="Colombia">Colombia</option>
             <option value="Cuba">Cuba</option>
             <option value="Bolivia">Bolivia</option>
@@ -57,37 +72,52 @@
         <br>
         Seleccione los idiomas que controla:
         <select name="idiomas" multiple required name="idiomas">
-            <option value="español">Español
-            <option value="Inglés">Inglés
-            <option value="Alemán">Alemán
-            <option value="Italiano">Italiano
-            <option value="Chino">Chino
-            <option value="Francés">Francés
-            <option value="Portugués">Portugués
-            <option value="Japonés">Japonés
-            <input value="Ruso">Ruso
-            <input value="Sueco">Sueco
-            <input value="Griego">Griego
-            <input value="Euskera">Euskera
-            <input value="Gallego">Gallego
-            <input value="Catalán">Catalán
-            <input value="Pekinés">Pekinés
+            <input type="checkbox" value="español">Español
+            <input type="checkbox" value="Inglés">Inglés
+            <input type="checkbox" value="Alemán">Alemán
+            <input type="checkbox" value="Italiano">Italiano
+            <input type="checkbox" value="Chino">Chino
+            <input type="checkbox" value="Francés">Francés
+            <input type="checkbox" value="Portugués">Portugués
+            <input type="checkbox" value="Japonés">Japonés
+            <input type="checkbox" value="Ruso">Ruso
+            <input type="checkbox" value="Sueco">Sueco
+            <input type="checkbox" value="Griego">Griego
+            <input type="checkbox" value="Euskera">Euskera
+            <input type="checkbox" value="Gallego">Gallego
+            <input type="checkbox" value="Catalán">Catalán
+            <input type="checkbox" value="Pekinés">Pekinés
         </select>
         <br>
         <br>
-        Seleccione el máximo nivel de estudios que tiene:
+        Seleccione el nivel máximo de estudios que tiene:
         <select name="estudios" required name="estudios">
-        <option value="Sin estudios">Sin estudios</option>
-        <option value="primario">Primario</option>
-        <option value="secundario">Secundario</option>
-        <option value="universitario">Universitario</option>
-        <option value="postgrado">Postgrado</option>
-    </select>
+            <option value="Sin estudios">Sin estudios</option>
+            <option value="primario">Primario</option>
+            <option value="secundario">Secundario</option>
+            <option value="universitario">Universitario</option>
+            <option value="postgrado">Postgrado</option>
+        </select>
         <br>
-
-        <input type="submit" value="Enviar">
-
+        <br>
+        Seleccione la sección donde desea ingresar:
+        <br>
+        <input type="radio" name="seccion" value="limpieza">Servicio de limpieza<br>
+        <input type="radio" name="seccion" value="laboratorio">Científico de laboratorio<br>
+        <input type="radio" name="seccion" value="campo" disabled>Científico de campo<br>
+        <input type="radio" name="seccion" value="directivo">Directivo<br>
+        <br>
+        <br>
+        Para finalizar, introduzca una breve presentación suya y motivos para que le contratemos:
+        <input type="text" name="introduccion" size="12" required name="introduccion">
+        <br>
+        <br>
+        <button type="submit">Enviar<img src="./img/avion.png" alt="envio"></button>
+        <button type="reset">Borrar<img src="./img/recharge.png" alt="borrado"></button>
     </form>
+    <br>
+    <p>Una vez haya enviado su formulario puede cerrar la página o recargarla para enviar una solicitud a un puesto
+        distinto.</p>
 </body>
 
 </html>

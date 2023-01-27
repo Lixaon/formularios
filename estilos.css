@@ -1,0 +1,29 @@
+.estilos1 {
+    color:goldenrod;
+}
+
+.estilos2 {
+    font-style: italic;
+    font-style: bold;
+    color: whitesmoke;
+    font-size: 1.5rem;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.estilos3 {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    color: whitesmoke;
+}
+
+.estilos4 {
+    font-family:'Times New Roman', Times, serif;
+    color: whitesmoke;
+    font-style: italic;
+    font-style: bold;
+    font-size: 2rem;
+}
+
+body {
+    color:rgb(145, 145, 145);
+}
