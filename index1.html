@@ -14,9 +14,12 @@
     <p>Por favor, rellene toda la información con datos verdaderos. Una vez entregado comunicaremos con usted en un
         plazo de cinco a siete días laborales.</p>
     <br>
-    <br>
-    <form action="mailto:alumno.630326@ies-azarquiel.es" method="post" enctype="text/plain">>
-        <fieldset>
+    <form action="mailto:alumno.630326@ies-azarquiel.es" method="post" enctype="text/plain">
+        Por favor, introduzca la fecha en la que está rellenando el formulario:
+        <input type="date" name="fecha" value="">
+        <br>
+        <br>
+        <fieldset class="clase1">
             <legend>Datos personales</legend>
             <br>
             Apellidos y nombre:
@@ -25,11 +28,10 @@
             <br>
             Género con el que se sienta identificad@:
             <select name="genero">
-                <input value="hombre">Hombre
-                <input value="mujer">Mujer
-                <input value="no binario">No binario
-                <input value="otros">Otros (por favor, especifique):
-                <input type="text" name="otros" size="8">
+                <option value="hombre">Hombre
+                <option value="mujer">Mujer
+                <option value="no binario">No binario
+                <option value="otros">Otros (por favor, especifique): &nbsp; <input type="text" name="otros" size="8">
             </select>
             <br>
             <br>
@@ -50,6 +52,11 @@
             <br>
         </fieldset>
         <br>
+        Establezca un nombre de usuario y una contraseña para su futuro perfil de empleado:
+        <input type="text" name="usuario" required name="usuario">&nbsp;&nbsp;<input type="password" name="contraseña"
+            required name="contraseña">
+            <br>
+            <br>
         Seleccione su pais:
         <select name="pais" required name="pais">
             <option value="Argentina">Argentina</option>
@@ -72,21 +79,21 @@
         <br>
         Seleccione los idiomas que controla:
         <select name="idiomas" multiple required name="idiomas">
-            <input type="checkbox" value="español">Español
-            <input type="checkbox" value="Inglés">Inglés
-            <input type="checkbox" value="Alemán">Alemán
-            <input type="checkbox" value="Italiano">Italiano
-            <input type="checkbox" value="Chino">Chino
-            <input type="checkbox" value="Francés">Francés
-            <input type="checkbox" value="Portugués">Portugués
-            <input type="checkbox" value="Japonés">Japonés
-            <input type="checkbox" value="Ruso">Ruso
-            <input type="checkbox" value="Sueco">Sueco
-            <input type="checkbox" value="Griego">Griego
-            <input type="checkbox" value="Euskera">Euskera
-            <input type="checkbox" value="Gallego">Gallego
-            <input type="checkbox" value="Catalán">Catalán
-            <input type="checkbox" value="Pekinés">Pekinés
+            <option type="checkbox" value="español">Español
+            <option type="checkbox" value="Inglés">Inglés
+            <option type="checkbox" value="Alemán">Alemán
+            <option type="checkbox" value="Italiano">Italiano
+            <option type="checkbox" value="Chino">Chino
+            <option type="checkbox" value="Francés">Francés
+            <option type="checkbox" value="Portugués">Portugués
+            <option type="checkbox" value="Japonés">Japonés
+            <option type="checkbox" value="Ruso">Ruso
+            <option type="checkbox" value="Sueco">Sueco
+            <option type="checkbox" value="Griego">Griego
+            <option type="checkbox" value="Euskera">Euskera
+            <option type="checkbox" value="Gallego">Gallego
+            <option type="checkbox" value="Catalán">Catalán
+            <option type="checkbox" value="Pekinés">Pekinés
         </select>
         <br>
         <br>
@@ -107,13 +114,16 @@
         <input type="radio" name="seccion" value="campo" disabled>Científico de campo<br>
         <input type="radio" name="seccion" value="directivo">Directivo<br>
         <br>
+        Acepto los Términos y Condiciones del servicio y acepto que mis datos puedan ser tratados por terceras personas:
+        <input type="checkbox" value="acepta" required name="acepta" name="acepta">
+        <br>
         <br>
         Para finalizar, introduzca una breve presentación suya y motivos para que le contratemos:
-        <input type="text" name="introduccion" size="12" required name="introduccion">
+        <input type="text" name="introduccion" size="40" required name="introduccion">
         <br>
         <br>
-        <button type="submit">Enviar<img src="./img/avion.png" alt="envio"></button>
-        <button type="reset">Borrar<img src="./img/recharge.png" alt="borrado"></button>
+        <button type="submit">Enviar<img src="./img/avion.png" height="32" width="32" alt="envio"></button>
+        <button type="reset">Borrar<img src="./img/recharge.png" height="32" width="32" alt="borrado"></button>
     </form>
     <br>
     <p>Una vez haya enviado su formulario puede cerrar la página o recargarla para enviar una solicitud a un puesto

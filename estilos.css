@@ -1,8 +1,12 @@
-.estilos1 {
-    color:goldenrod;
+fieldset {
+    background-color: #fcebca;
+    border-color:darkgoldenrod;
+    color: #303030;
+    border-radius: 4px;
+    width: 600px;
 }
 
-.estilos2 {
+.clase2 {
     font-style: italic;
     font-style: bold;
     color: whitesmoke;
@@ -10,13 +14,13 @@
     font-family:'Times New Roman', Times, serif;
 }
 
-.estilos3 {
+.clase3 {
     font-family:'Times New Roman', Times, serif;
     font-size: 1.5rem;
     color: whitesmoke;
 }
 
-.estilos4 {
+.clase4 {
     font-family:'Times New Roman', Times, serif;
     color: whitesmoke;
     font-style: italic;
